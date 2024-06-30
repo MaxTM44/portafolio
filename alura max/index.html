@@ -1,0 +1,273 @@
+<!DOCTYPE html> <!-- Indica al navegador que se esta trabajando con la ultima version disponible de html-->
+<html lang="es"><!-- para seleccionar el idioma que vayamos a utilizar en nuestra pagina en este caso seria español -->
+
+<head> <!-- INICIO CABECERA Aca van los metadatos, links etc.. todo esto NO es visible para el usuario -->
+    <meta charset="UTF-8"> <!--Metadatos importantes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--La etiqueta link nos permite vincular otros archivos a nuestro Html, en este caso vinculamos css para darle estilos al portafolio-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Portafolio</title>
+    <!--Tag title nos permite poner el titulo que aparecerá en la parte superior de la pagina en el navegador-->
+</head><!--FIN DE CABECERA-->
+
+<body> <!-- INICIO DEL CUERPO -->
+    <!--Section del  menu-->
+    <!--este div cierra en la linea 200 y pico-->
+
+    <header class="menu__header">
+        <!--header se utiliza para representar el encabezado de una seccion o de una pagina en general, suele tener el logo tipo de empresa, el menu de la navegacion principal o cualquier otro contenido introductorio-->
+        <div> <!--Un div es un contenedor, actua como una cajita que nos permite dividir elementos-->
+            <img src="assets\vector.png" alt=""> <!--Nos permite vincular imagenes-->
+            <h3 class="menu__title">Maximiliano Ruiz Diaz</h3>
+            <!--Podemos poner textos, o titulos va desde el h1 al h6 siendo h1 el texto mas importante y h6 el menos importante.-->
+        </div>
+
+        <ul> <!-- Para crear una lista desorrdenada-->
+            <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li> <!-- listas items -->
+            <li class="menu__list__item"><a href="#skills">Skills</a></li>
+            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+            <li class="menu__list__item"><a href="#formacion">Formacion</a></li>
+            <li class="menu__list__item"><a href="#proyectos">Proyectos</a></li>
+            <li class="menu__list__email"><a href="#contacto">ruizdiazmaximiliano9@gmail.com</a></li>
+            <li class="menu__list__contacto"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main> <!--Es como una caja que envuelve el contenido principal de la pagina-->
+
+        <!--esta es la section del header/Title/Hero-->
+
+        <section class="title">
+            <img class="title__profile" src="/assets/perfi_max.jpg">
+
+            <div class="title__div">
+                <div class="title__container">
+                    <h2 class="title__bio">Hola, soy Maximiliano construyo paginas web </h2>
+                    <br>
+                    <p class="title__subsection">Hago parte de Alura Latam y actualmente estoy participando en el
+                        proyecto Oracle One. Este programa me brinda la oportunidad de aprender y
+                        desarrollar nuevas habilidades en el ámbito de la tecnología y la programación. Estoy emocionado
+                        de formar parte de esta iniciativa que promueve la educación y el crecimiento profesional en
+                        Latinoamérica. Mi participación en este proyecto no solo me permite mejorar mis competencias
+                        técnicas, sino también contribuir a una comunidad de aprendizaje activa y colaborativa.</p>
+                </div>
+
+                <ul class="title__network">
+                    <!--aqui van los enlaces de mi social media-->
+                    <li class="title__network__item"><a href="https://github.com/MaxTM44" target="_blank">Github <img
+                                src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a
+                            href="https://www.linkedin.com/in/maximiliano-ruiz-diaz-b55143268/"
+                            target="_blank">Linkedin<img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="#">Curriculo <img src="assets\arrow.png"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--section about me-->
+        <section class="about" id="sobre-mi">
+            <h3 class="about_p">Sobre mi</h3>
+            <p class="about__paragraph">Como desarrollador front-end apasionado, tengo experiencia en HTML, CSS y
+                JavaScript. Disfruto creando experiencias de usuario atractivas y siempre estoy en la búsqueda de nuevas
+                tecnologías que me permitan mejorar mis habilidades. Mi entusiasmo por el desarrollo web me impulsa a
+                aprender continuamente y a perfeccionar mis conocimientos.</p>
+        </section>
+
+        <!--section de skills-->
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Skills</h3>
+            <section class="skills__line">
+
+                <article class="skills__box">
+                    <img src="assets/html5.png">
+                    <h4 class="skills__name"> Html5</h4>
+                </article>
+
+                <article class="skills__box">
+                    <img src="assets/css3-alt.png">
+                    <h4 class="skills__name"> Css3</h4>
+                </article>
+
+
+                <article class="skills__box">
+                    <img src="assets/node-js.png">
+                    <h4 class="skills__name"> Node-js</h4>
+                </article>
+
+                <article class="skills__box">
+                    <img src="assets/react_icon.png">
+                    <h4 class="skills__name">React</h4>
+                </article>
+
+                <article class="skills__box">
+                    <img src="assets/rama-de-codigo.png">
+                    <h4 class="skills__name">Git</h4>
+                </article>
+
+                <article class="skills__box">
+                    <img src="assets/js.png">
+                    <h4 class="skills__name">Js</h4>
+                </article>
+            </section>
+        </section>
+
+        <!-- Sección de Hobbies -->
+
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <section class="hobbies__line">
+
+                <article class="hobbies__box">
+                    <img src="/assets/diseño gráfico.png">
+                    <h4 class="hobbies__name">Diseñar</h4>
+                </article>
+
+                <article class="hobbies__box">
+                    <img src="assets/montar-en-bicicleta.png">
+                    <h4 class="hobbies__name"> Montar bicicleta</h4>
+                </article>
+
+                <article class="hobbies__box">
+                    <img src="assets/cocinero.png"></>
+                    <h4 class="hobbies__name">Cocinar</h4>
+                </article>
+
+                <article class="hobbies__box">
+                    <img src="assets/pesa (1).png">
+                    <h4 class="hobbies__name"> Ejercicio</h4>
+                </article>
+
+                <article class="hobbies__box">
+                    <img src="assets/guitarra.png">
+                    <h4 class="hobbies__name"> Tocar guitarra</h4>
+                </article>
+
+                <article class="hobbies__box">
+                    <img src="assets/musica-alternativa.png"></>
+                    <h4 class="hobbies__name"> Escuchar musica</h4>
+                </article>
+            </section>
+        </section>
+
+
+        <!-- Sección de Formación académica-->
+
+        <section class="academic" id="formacion">
+            <h2 class="academic__title">Formación académica</h2>
+            <section class="academic__courses">
+                <article class="academic__courses__box">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <img class="fotoAlura" src="/assets/aluraoracle.jpg">
+                    <div>
+                        <h4>Front-end</h4>
+                        <p>2024 - Alura Latam</p>
+                    </div>
+                </article>
+
+
+            </section>
+        </section>
+
+        <!-- Sección de Experiencia Profesional/Proyectos-->
+
+        <section class="experience" id="proyectos">
+            <h2 class="experience__section__title">Experiencia Profesional</h2>
+            <section class="experiencie__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <article>
+
+
+
+                    <div class="experience__description">
+
+                        <div>
+                            <h2 class="experience__title">Encriptador de texto</h2>
+                            <p class="experience__text">Challenge Alura Codificador </p>
+                        </div>
+
+                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                        <div class="button">
+                            <a href="proyecto encriptador de texto">Repositório</a>
+                            <a href="">Ver demo</a>
+                        </div>
+
+                    </div>
+
+
+                    <img class="experience__img" src="assets/secretcode_print.png">
+
+                </article>
+
+
+                <article>
+
+
+                    <div class="experience__description">
+
+                        <div>
+                            <h2 class="experience__title">Barberia Alura.</h2>
+                            <p class="experience__text">Barberia page html /css </p>
+                        </div>
+
+                        <div class="button">
+                            <a href="proyecto baberia alura">Repositório</a>
+                            <a href="">Ver demo</a>
+                        </div>
+                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
+
+                    </div>
+
+                    <img class="experience__img" src="assets/barberia.png">
+
+                </article>
+
+
+
+            </section>
+        </section>
+
+        <!-- Sectión de Contacto -->
+
+        <section class="formcontato" id="contacto">
+            <img class="formcontato__img" src="assets/contactoo.jpg">
+
+
+
+            <section class="formcontato__contacto">
+
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Contacto</h2>
+                    <p class="formcontato__subtext">¿Quieres contactarme? <br> Complete el siguiente formulario y me
+                        pondré en contacto con usted lo antes posible.</p>
+
+                    <!-- Formulario -->
+
+                    <form class="formcontato__form" name="form">
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
+                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
+                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
+                            placeholder="Mensaje"></textarea>
+                        <input value="Enviar mensaje" type="submit" class="formcontato__botao"></input>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Sección de Footer -->
+
+    <footer>
+        <p>Desarrollado por Maximiliano Ruiz Diaz - 2024</p>
+    </footer>
+
+    <!--Script del documento JavaScript-->
+</body> <!-- FIN  DEL CUERPO DEL DOCUMENTO-->
+
+</html>

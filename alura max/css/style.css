@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(136, 185, 227, 0.345);
+}
+
+.menu__header{
+    display: flex; /*Ubica los elementos uno al lado del otro*/
+    padding: 10px 20px; 
+    justify-content: space-between; /*posiciona a los elementos horizontalmente lo maximo posible*/
+    
+}
+
+header div{
+    display: flex;
+    gap: 20px;
+    align-items: center; /*Ordena verticalmente center, al centro del contenedor*/
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+ 
+.menu__list__email a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__list__item, .menu__list__contacto{
+display: none;
+}
+
+
+
+.title__network{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+.title__network__item a {
+    text-decoration: none;
+    color: brown;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title__profile{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgba(105, 105, 149, 0.349);
+}
+
+
+
+/*Ajustando las imagenes, logos e iconos*/
+.skills, .hobbies{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills__title, .hobbies__title{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*Aplicando grid css*/
+
+.skills__line, .hobbies__line{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.skills__box, .hobbies__box{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.skills__line img, .hobbies__line img {  /*Manipulando el logos de las skills*/
+    width: 90px;
+}
+
+.skills__name{
+    align-self: center;
+}
+
+/*Formacion*/
+
+.academic{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fotoAlura{
+    width: 170px;
+    height: 150px;
+    padding: 18px;
+}
+
+.experience__section__title {
+    text-align: center;
+    padding: 30px;
+}
+
+.academic__courses__box div {
+    text-align: center;
+}
+
+.experience {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.experiencie__box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.experience__img{
+    width: 60%;
+    padding: 40px;
+
+}
+
+.experience__description{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.experience__description a:nth-child(1){
+    text-decoration: none;
+    color: rgb(2, 25, 19);
+    padding: 10px;
+    border: 1px solid rgb(139, 53, 209);
+}
+
+.experience__description a:nth-child(1):hover{
+    background-color: rgb(95, 197, 158);
+    color: rgb(35, 3, 3);
+}
+
+
+
+.experience__description a:nth-child(2){
+    text-decoration: none;
+    color: rgb(25, 26, 2);
+    padding: 10px;
+    border: 1px solid brown;
+    background-color: rgba(207, 213, 103, 0.507);
+}
+
+.experience__description a:nth-child(2):hover{
+    background-color: rgb(237, 9, 9);
+}
+
+.experience__info{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+/*Contacto*/
+
+.formcontato{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formcontato__img{
+    display: none;
+}
+
+.formcontato{
+    background-color:rgba(203, 159, 217, 0.558);
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formcontato__input{
+    padding: 14px;
+}
+
+
+.formcontato__textarea{
+    padding: 14px;
+    resize: none; /*predifine tamaño*/
+    height: 70px;
+}
+
+.formcontato__botao{
+    width: 120px;
+    padding: 12px;
+    background-color: rgba(228, 80, 90, 0.767);
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;;
+}
+
+
+.formcontato__botao:hover {
+    transform: scale(1.1);
+    background-color: rgb(116, 169, 216);
+    color: red;
+}
+
+footer {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/*APLICANDO MEDIA QUERY PARA AJUSTAR EL PORTAFOLIO A LOS DIFERENTES DISPOSITIVOS*/
+
+@media (min-width:810px) {
+
+
+.title{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.skills__line, .hobbies__line {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.fotoAlura{
+    width: 250px;
+    height: auto;
+}
+
+
+.skills, .hobbies, .about, .formcontato{
+    padding-inline: 30px;
+
+}
+
+.menu__list__contacto{
+    display: flex;
+    padding: 10px;
+}
+
+.menu__list__item, a{
+    list-style: none;
+}
+
+
+
+.menu__list__contacto{
+    display: none;
+}
+
+
+
+}
+
+
+/*TRABAJANDO EN LA VERSION PARA DESKTOP*/
+
+@media (min-width:1440px) {
+
+.menu__list__item{
+    display: block;
+}
+
+.menu__list__item a {
+    text-decoration: none;
+
+} 
+
+header ul {
+    display: flex;
+    gap: 25px;
+}
+
+.skills__line, .hobbies__line {
+    grid-template-columns: repeat(6,1fr);
+    
+}
+
+.skills, .hobbies, .about, .formcontato{
+    padding-inline: 50px;
+
+}
+
+.title__profile{
+    height: 250px;
+    width: auto;
+}
+
+
+
+.formcontato__img{
+    display: block;
+    width: 30%;
+    height: 70%;
+}
+
+
+
+.formcontato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.experiencie__box article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 222, 210);
+}
+
+
+.experiencie__box article:nth-child(1){
+    flex-direction:row-reverse;
+}
+
+
+.experience__description{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
